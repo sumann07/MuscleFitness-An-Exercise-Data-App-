@@ -5,8 +5,8 @@ import Exercise from './exercise';
 const Home = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-
-        fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', {
+        const fetchPart = async ()=>{
+       await fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', {
             headers: {
                 'X-RapidAPI-Key': 'b3fbb65be6msh708d22c9ae315c7p1d4446jsn53a7919f98c4',
                 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
@@ -16,6 +16,8 @@ const Home = () => {
                 console.log(response)
                 setData(response);
             })
+        };
+        fetchPart();
     }, []);
 
     return (
