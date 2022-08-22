@@ -12,19 +12,19 @@ const Pagination=(props)=> {
     }
   return (
     <nav>
-        <ul className='pagination justify-content-center'>
+        <ul className='pagination justify-content-center my-3 mx-5'>
             <li className='page-item'>
                 <a className='page-link'
                 onClick={prevPage}
-                href="#">
+                href="#exer">
                     &larr;Prev
                 </a>
             </li>
            <li className='page-item'>
             <a className='page-link'
             onClick={nextPage}
-            href="#">
-                Next&rarr;
+            href="#exer">
+              Next &rarr;
             </a>
 
           </li>
