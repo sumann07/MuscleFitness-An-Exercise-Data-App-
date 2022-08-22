@@ -7,17 +7,18 @@ const Home = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
         const fetchPart = async ()=>{
-       await fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', {
+      await fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', {
             headers: {
-                'X-RapidAPI-Key': '52434c8457msh346dca9e93126dfp16d282jsn6ba222a40c98',
+                'X-RapidAPI-Key': '340e287f3cmshfdb5e1e57c5b1acp1433b9jsn9a65f89af096',
                 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
             },
         }).then(response => response.json())
             .then(response => {
-                //console.log(response)
+                console.log(response)
                 setData(response);
             })
         };
+        
         fetchPart();
     }, []);
 

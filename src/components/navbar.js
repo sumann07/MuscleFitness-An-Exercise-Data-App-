@@ -10,10 +10,10 @@ function Navbar() {
                     <Link to="/" className="navbar-brand">
                         <img src={logo} alt="" width="100" height="50" class="d-inline-block align-text-top" />
                     </Link>
-                    <div class="d-flex second-cont">
-                        <Link class="tag"to="/" >Home</Link>
-                        <a class="tag"href="#exer">Exercise</a>
-                        <Link class="tag" to="/about">Contact</Link>
+                    <div className="d-flex second-cont">
+                        <Link className="tag"to="/" >Home</Link>
+                        <a className="tag"href="#exer">Exercise</a>
+                        <Link className="tag" to="/about">Contact</Link>
                     </div>
                 </div>
             </nav>

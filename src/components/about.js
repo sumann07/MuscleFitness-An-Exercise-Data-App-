@@ -25,7 +25,7 @@ function About() {
                  
             </div>
             <div className=" contact-right-col">
-                <img src={cimg} alt="contact-image"/>
+                <img src={cimg} alt="contact-ig"/>
             </div>
         </div>
     </div>
